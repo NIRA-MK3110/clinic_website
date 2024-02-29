@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+クリニックの紹介
+-------------------------------------------*/
+#introduction {
+  margin-bottom: 80px;
+}
+#introduction .content {
+  display: flex;
+  margin-bottom: 56px;
+}
+#introduction .content .img {
+  width: 45%;
+  margin-right: 10%;
+}
+#introduction .content .text {
+  width: 45%;
+}
+#introduction .content .text p {
+  line-height: 1.8;
+  text-align: justify;
+}
+#introduction .list-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  margin-bottom: 56px;
+  text-align: center;
+  position: relative;
+}
+#introduction .list-title::before,
+#introduction .list-title::after {
+  content: "";
+  width: calc(50% - 20px);
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  bottom: 0;
+}
+#introduction .list-title::before {
+  left: 0;
+}
+#introduction .list-title::after {
+  right: 0;
+}
+#introduction .list-title .arrow {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-color:  transparent transparent #707070 #707070;
+  margin: 0 auto;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+}
+#introduction .list {
+  background-color: #f3f7f9;
+  padding: 40px 10%;
+}
+#introduction .list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#introduction .list li {
+  font-weight: bold;
+  line-height: 2.8;
+  padding-left: 30px;
+  position: relative;
+}
+#introduction .list li:nth-child(odd) {
+  width: 54%;
+}
+#introduction .list li:nth-child(even) {
+  width: 46%;
+}
+#introduction .list li::before {
+  content: "";
+  width: 24px;
+  height: 20px;
+  background-image: url("../img/common/icon-check.svg");
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+/*-------------------------------------------
+診療の流れ
+-------------------------------------------*/
+#flow .content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+#flow .content .list {
+  width: 59%;
+  margin-right: 7%;
+}
+#flow .content .list li {
+  display: flex;
+}
+#flow .content .list li .no-line {
+  margin-right: 24px;
+}
+#flow .content .list li .no-line .no {
+  width: 36px;
+  height: 36px;
+  border: solid 1px #707070;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: " 游ゴシック体", YuGothic, " 游ゴシック Medium", "Yu Gothic Medium", " 游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+#flow .content .list li .no-line .line {
+  width: 1px;
+  height: calc(100% - 36px);
+  background-color: #707070;
+  display: block;
+  margin: 0 auto;
+}
+#flow .content .list li .detail {
+  margin-bottom: 32px;
+}
+#flow .content .list li .detail .title {
+  font-family: " 游ゴシック体", YuGothic, " 游ゴシック Medium", "Yu Gothic Medium", " 游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#flow .content .list li .detail .text {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+#flow .content .img {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*-------------------------------------------
+クリニックのご案内
+-------------------------------------------*/
+#guide {
+  background-color: #f1f7f7;
+  padding: 80px 0;
+}
+#guide .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 56px;
+  text-align: center;
+}
+#guide .list {
+  max-width: 1148px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+#guide .list li {
+  width: 30%;
+  background-color: #fff;
+  padding: 32px 24px 24px 24px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+#guide .list li:nth-child(1),
+#guide .list li:nth-child(2),
+#guide .list li:nth-child(4) {
+  margin-right: 5%;
+}
+#guide .list li .no {
+  font-size: 48px;
+  margin-top: -68px;
+}
+#guide .list li .text {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 16px;
+  position: relative;
+}
+#guide .list li .text::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  top: 12px;
+  right: -25px;
+}
+#guide .list li .text::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-color: #707070 #707070 transparent transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 8px;
+  right: -25px;
+}
+#guide .list li .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+#guide .list li .tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+#guide .list li .tel img {
+  width: 40px;
+  margin-right: 12px;
+}
+#guide .list li .info {
+  font-size: 13px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  クリニックの紹介
+  -------------------------------------------*/
+  #introduction .content {
+    flex-direction: column;
+  }
+  #introduction .content .img {
+    width: 100%;
+    margin: 0 0 24px 0;
+  }
+  #introduction .content .text {
+    width: 100%;
+  }
+  #introduction .content .text p {
+    font-size: 14px;
+  }
+  #introduction .list-title {
+    font-size: 20px;
+  }
+  #introduction .list-title .arrow {
+    top: 22px;
+  }
+  #introduction .list ul {
+    flex-direction: column;
+  }
+  #introduction .list {
+    padding: 24px 32px;
+  }
+  #introduction .list li:nth-child(odd) {
+    width: 100%;
+  }
+  #introduction .list li:nth-child(even) {
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  診療の流れ
+  -------------------------------------------*/
+  #flow .content {
+    flex-direction: column;
+  }
+  #flow .content .list {
+    width: 100%;
+    margin-right: 0;
+  }
+  #flow .content .list li .detail .text {
+    margin-bottom: 24px;
+  }
+  #flow .content .img {
+    display: none;
+  }
+
+  /*-------------------------------------------
+  クリニックのご案内
+  -------------------------------------------*/
+  #guide .list {
+    flex-direction: column;
+  }
+  #guide .list li {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  #guide .list li:nth-child(1),
+  #guide .list li:nth-child(2),
+  #guide .list li:nth-child(4) {
+    margin-right: 0;
+  }
+}

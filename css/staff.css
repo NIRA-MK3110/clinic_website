@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.wrapper {
+  margin: 0 auto 80px auto;
+}
+
+.content {
+  display: flex;
+}
+.content .img {
+  width: 38%;
+  margin-right: 4%;
+}
+.content .text {
+  width: 58%;
+  line-height: 1.8;
+}
+.content .text .title {
+  border-bottom: solid 2px #179591;
+  display: inline-block;
+  padding: 0 0 8px 14%;
+  margin-bottom: 32px;
+  position: relative;
+  left: -14%;
+}
+.content .text .title .honorific {
+  color: #179591;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.content .text .title .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content .text .title .name span {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 24px;
+}
+.content .text .detail p {
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list li {
+  width: 46%;
+  border-top: solid 2px #179591;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.list li::before {
+  content: '';
+  background: #f1f7f7;
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  transform: rotate(45deg) translate(-71%,0);
+  z-index: -10;
+}
+.list li:nth-child(odd) {
+  margin-right: 8%;
+}
+.list li .item-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 16px 0;
+}
+.list li .item-header .title {
+  width: 58%;
+  padding-left: 16px;
+}
+.list li .item-header .title .honorific {
+  display: block;
+  color: #179591;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.list li .item-header .title .name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.list li .img {
+  width: 42%;
+  text-align: right;
+}
+.list li .detail {
+  line-height: 1.8;
+  padding: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .img {
+    width: 100%;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+  .content .text {
+    width: 100%;
+    font-size: 14px;
+  }
+  .content .text .title {
+    display: block;
+    padding: 0 0 8px 0;
+    left: 0;
+  }
+  .content .text .title .name {
+    font-size: 20px;
+  }
+  .content .text .title .name span {
+    font-size: 12px;
+  }
+  .list {
+    flex-direction: column;
+  }
+  .list li {
+    width: 100%;
+  }
+  .list li:nth-child(odd) {
+    margin-right: 0;
+  }
+  .list li .detail {
+    font-size: 14px;
+  }
+  .list li .item-header .title .honorific {
+    font-size: 12px;
+  }
+  .list li .item-header .title .name {
+    font-size: 16px;
+  }
+}
