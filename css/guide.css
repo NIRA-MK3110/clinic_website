@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+.content-header {
+  margin-bottom: 80px;
+}
+.content-header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0 124px 0;
+}
+.content-header .menu li {
+  position: relative;
+}
+.content-header .menu li::before {
+  content: "";
+  width: 1px;
+  height: 80px;
+  background-color: #707070;
+  transform: rotate(30deg);
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+}
+.content-header .menu li:last-of-type::after {
+  content: "";
+  width: 1px;
+  height: 80px;
+  background-color: #707070;
+  transform: rotate(30deg);
+  position: absolute;
+  right: 0;
+  bottom: -26px;
+}
+.content-header .menu li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 28px;
+}
+.content-header .menu li img {
+  margin-right: 10px;
+}
+.content-header .menu li .arrow {
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-color: #707070 #707070 transparent transparent;
+  transform: rotate(135deg);
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+}
+
+.img-content {
+  display: flex;
+}
+.img-content .text {
+  width: 45%;
+  margin-right: 10%;
+  line-height: 2;
+}
+.img-content .img {
+  width: 45%;
+}
+
+.content-img {
+  margin-bottom: 48px;
+}
+.content {
+  margin-bottom: 48px;
+}
+.content p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+#treatment {
+  margin-bottom: 80px;
+}
+#prevention {
+  margin-bottom: 80px;
+}
+#whitened {
+  margin-bottom: 80px;
+}
+#implant {
+  margin-bottom: 80px;
+}
+#implant .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+#implant .list li {
+  width: 31%;
+  font-size: 14px;
+  margin: 0 3.5% 32px 0;
+  text-align: justify;
+}
+#implant .list li:nth-child(3n) {
+  margin-right: 0;
+}
+#implant .list li img {
+  margin-bottom: 16px;
+}
+#implant .list li .title {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .content-header .menu {
+    flex-wrap: wrap;
+  }
+  .content-header .menu li {
+    width: 42%;
+    margin-bottom: 48px;
+  }
+  .content-header .menu li:nth-child(2n)::after {
+    content: "";
+    width: 1px;
+    height: 80px;
+    background-color: #707070;
+    transform: rotate(30deg);
+    position: absolute;
+    right: 0;
+    bottom: -26px;
+  }
+  .content-header .menu li a {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  .content-header .menu li img {
+    margin: 0 0 8px 0;
+  }
+
+  .img-content {
+    flex-direction: column-reverse;
+  }
+  .img-content .img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .img-content .text {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #implant .list li {
+    width: 47%;
+    margin: 0 6% 32px 0;
+  }
+  #implant .list li:nth-child(3n) {
+    margin-right: 6%;
+  }
+  #implant .list li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
